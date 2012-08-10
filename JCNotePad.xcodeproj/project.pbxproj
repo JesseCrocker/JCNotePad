@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8895F85015D593F7007E537B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8895F84F15D593F7007E537B /* UIKit.framework */; };
+		8895F85215D593F7007E537B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8895F85115D593F7007E537B /* Foundation.framework */; };
+		8895F85415D593F7007E537B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8895F85315D593F7007E537B /* CoreGraphics.framework */; };
+		8895F85A15D593F7007E537B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8895F85815D593F7007E537B /* InfoPlist.strings */; };
+		8895F85C15D593F7007E537B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8895F85B15D593F7007E537B /* main.m */; };
+		8895F86015D593F7007E537B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8895F85F15D593F7007E537B /* AppDelegate.m */; };
+		8895F87115D59426007E537B /* JCNotePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8895F87015D59426007E537B /* JCNotePadViewController.m */; };
+		8895F87415D59432007E537B /* lineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8895F87315D59432007E537B /* lineView.m */; };
+		8895F87615D59444007E537B /* JCNotePadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8895F87515D59444007E537B /* JCNotePadViewController.xib */; };
+		8895F89315D59756007E537B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8895F89215D59756007E537B /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8895F84B15D593F6007E537B /* JCNotePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCNotePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8895F84F15D593F7007E537B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8895F85115D593F7007E537B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8895F85315D593F7007E537B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8895F85715D593F7007E537B /* JCNotePad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCNotePad-Info.plist"; sourceTree = "<group>"; };
+		8895F85915D593F7007E537B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8895F85B15D593F7007E537B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8895F85D15D593F7007E537B /* JCNotePad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCNotePad-Prefix.pch"; sourceTree = "<group>"; };
+		8895F85E15D593F7007E537B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8895F85F15D593F7007E537B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8895F86F15D59426007E537B /* JCNotePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNotePadViewController.h; sourceTree = "<group>"; };
+		8895F87015D59426007E537B /* JCNotePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCNotePadViewController.m; sourceTree = "<group>"; };
+		8895F87215D59432007E537B /* lineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lineView.h; sourceTree = "<group>"; };
+		8895F87315D59432007E537B /* lineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lineView.m; sourceTree = "<group>"; };
+		8895F87515D59444007E537B /* JCNotePadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCNotePadViewController.xib; sourceTree = "<group>"; };
+		8895F89215D59756007E537B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8895F89515D59924007E537B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8895F84815D593F6007E537B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8895F89315D59756007E537B /* CoreData.framework in Frameworks */,
+				8895F85015D593F7007E537B /* UIKit.framework in Frameworks */,
+				8895F85215D593F7007E537B /* Foundation.framework in Frameworks */,
+				8895F85415D593F7007E537B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8895F84015D593F6007E537B = {
+			isa = PBXGroup;
+			children = (
+				8895F89515D59924007E537B /* README.md */,
+				8895F85515D593F7007E537B /* JCNotePad */,
+				8895F84E15D593F6007E537B /* Frameworks */,
+				8895F84C15D593F6007E537B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8895F84C15D593F6007E537B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8895F84B15D593F6007E537B /* JCNotePad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8895F84E15D593F6007E537B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8895F89215D59756007E537B /* CoreData.framework */,
+				8895F84F15D593F7007E537B /* UIKit.framework */,
+				8895F85115D593F7007E537B /* Foundation.framework */,
+				8895F85315D593F7007E537B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8895F85515D593F7007E537B /* JCNotePad */ = {
+			isa = PBXGroup;
+			children = (
+				8895F87215D59432007E537B /* lineView.h */,
+				8895F87315D59432007E537B /* lineView.m */,
+				8895F86F15D59426007E537B /* JCNotePadViewController.h */,
+				8895F87015D59426007E537B /* JCNotePadViewController.m */,
+				8895F85E15D593F7007E537B /* AppDelegate.h */,
+				8895F85F15D593F7007E537B /* AppDelegate.m */,
+				8895F87515D59444007E537B /* JCNotePadViewController.xib */,
+				8895F85615D593F7007E537B /* Supporting Files */,
+			);
+			path = JCNotePad;
+			sourceTree = "<group>";
+		};
+		8895F85615D593F7007E537B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8895F85715D593F7007E537B /* JCNotePad-Info.plist */,
+				8895F85815D593F7007E537B /* InfoPlist.strings */,
+				8895F85B15D593F7007E537B /* main.m */,
+				8895F85D15D593F7007E537B /* JCNotePad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8895F84A15D593F6007E537B /* JCNotePad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8895F86C15D593F7007E537B /* Build configuration list for PBXNativeTarget "JCNotePad" */;
+			buildPhases = (
+				8895F84715D593F6007E537B /* Sources */,
+				8895F84815D593F6007E537B /* Frameworks */,
+				8895F84915D593F6007E537B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCNotePad;
+			productName = JCNotePad;
+			productReference = 8895F84B15D593F6007E537B /* JCNotePad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8895F84215D593F6007E537B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Jesse Crocker";
+			};
+			buildConfigurationList = 8895F84515D593F6007E537B /* Build configuration list for PBXProject "JCNotePad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8895F84015D593F6007E537B;
+			productRefGroup = 8895F84C15D593F6007E537B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8895F84A15D593F6007E537B /* JCNotePad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8895F84915D593F6007E537B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8895F85A15D593F7007E537B /* InfoPlist.strings in Resources */,
+				8895F87615D59444007E537B /* JCNotePadViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8895F84715D593F6007E537B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8895F85C15D593F7007E537B /* main.m in Sources */,
+				8895F86015D593F7007E537B /* AppDelegate.m in Sources */,
+				8895F87115D59426007E537B /* JCNotePadViewController.m in Sources */,
+				8895F87415D59432007E537B /* lineView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8895F85815D593F7007E537B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8895F85915D593F7007E537B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8895F86A15D593F7007E537B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8895F86B15D593F7007E537B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8895F86D15D593F7007E537B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCNotePad/JCNotePad-Prefix.pch";
+				INFOPLIST_FILE = "JCNotePad/JCNotePad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8895F86E15D593F7007E537B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCNotePad/JCNotePad-Prefix.pch";
+				INFOPLIST_FILE = "JCNotePad/JCNotePad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8895F84515D593F6007E537B /* Build configuration list for PBXProject "JCNotePad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8895F86A15D593F7007E537B /* Debug */,
+				8895F86B15D593F7007E537B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8895F86C15D593F7007E537B /* Build configuration list for PBXNativeTarget "JCNotePad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8895F86D15D593F7007E537B /* Debug */,
+				8895F86E15D593F7007E537B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8895F84215D593F6007E537B /* Project object */;
+}
