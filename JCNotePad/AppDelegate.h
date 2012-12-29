@@ -12,7 +12,8 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UINavigationController *navigationController;
 
-@property (strong, nonatomic) JCNotePadViewController *viewController;
+@property (strong, nonatomic) JCNotePadViewController *noteViewController;
 
 @end
