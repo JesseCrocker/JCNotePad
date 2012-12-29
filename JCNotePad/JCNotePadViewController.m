@@ -15,13 +15,8 @@
 @synthesize doneButton;
 @synthesize readOnly;
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
 
 #pragma mark - View lifecycle
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -29,7 +24,7 @@
     
     self.lines.lineSpacing = 22;
     self.lines.topSkip = 26;
-    [textView addSubview:self.lines];
+    [textView insertSubview:self.lines atIndex:0];
     
     [textView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
     
@@ -63,15 +58,18 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-	[super viewWillDisappear:animated];
+    [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
-	[self.textView resignFirstResponder];
+    [self.textView resignFirstResponder];
+    if(![self.textView.text isEqualToString:[objectToSet valueForKey:fieldToSet]]) {
+        [objectToSet setValue:textView.text forKey:fieldToSet];
+    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
-	[super viewDidDisappear:animated];
+    [super viewDidDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation{
@@ -88,12 +86,12 @@
 
 #pragma mark - resize view when keyboard opens
 -(CGRect)rectSwap:(CGRect)rect{
-	CGRect newRect;
-	newRect.origin.x = rect.origin.y;
-	newRect.origin.y = rect.origin.x;
-	newRect.size.width = rect.size.height;
-	newRect.size.height = rect.size.width;
-	return newRect;
+    CGRect newRect;
+    newRect.origin.x = rect.origin.y;
+    newRect.origin.y = rect.origin.x;
+    newRect.size.width = rect.size.height;
+    newRect.size.height = rect.size.width;
+    return newRect;
 }
 
 - (void) liftMainViewWhenKeybordAppears:(NSNotification*)aNotification{
@@ -142,7 +140,7 @@
 
 - (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-	CGSize newSize = [[change objectForKey:@"new"] CGSizeValue];
+    CGSize newSize = [[change objectForKey:@"new"] CGSizeValue];
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         lines.frame = CGRectMake(lines.frame.origin.x, lines.frame.origin.y, newSize.width + 124.0, newSize.height + 1100.0);

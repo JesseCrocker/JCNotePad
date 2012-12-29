@@ -16,7 +16,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
     }
     return self;
 }
@@ -34,7 +33,7 @@
         CGContextMoveToPoint(context, 0, i);
         CGContextAddLineToPoint(context, width, i);
     }
-    //draw vertical lines
+    //draw vertical lines for graph paper look
     //for (i = 0; i < width; i += gridSize) {
       //  CGContextMoveToPoint(context, i, 0);
         //CGContextAddLineToPoint(context, i, height);

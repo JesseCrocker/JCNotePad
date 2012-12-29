@@ -29,9 +29,9 @@
 		8895F85B15D593F7007E537B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8895F85D15D593F7007E537B /* JCNotePad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCNotePad-Prefix.pch"; sourceTree = "<group>"; };
 		8895F85E15D593F7007E537B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8895F85F15D593F7007E537B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8895F85F15D593F7007E537B /* AppDelegate.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; tabWidth = 4; };
 		8895F86F15D59426007E537B /* JCNotePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNotePadViewController.h; sourceTree = "<group>"; };
-		8895F87015D59426007E537B /* JCNotePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCNotePadViewController.m; sourceTree = "<group>"; };
+		8895F87015D59426007E537B /* JCNotePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = JCNotePadViewController.m; sourceTree = "<group>"; };
 		8895F87215D59432007E537B /* lineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lineView.h; sourceTree = "<group>"; };
 		8895F87315D59432007E537B /* lineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lineView.m; sourceTree = "<group>"; };
 		8895F87515D59444007E537B /* JCNotePadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCNotePadViewController.xib; sourceTree = "<group>"; };
